@@ -2,6 +2,7 @@
 import { Button } from "@/components/Button/Button";
 import { Input } from "@/components/Input/Input";
 import UserContext from "@/context/UserContext";
+import { jwtDecode } from "jwt-decode";
 
 import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";

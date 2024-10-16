@@ -2,6 +2,7 @@ import UserContext from "@/context/UserContext";
 import { useRouter } from "next/navigation";
 import { useContext } from "react";
 import { StyledH1, StyledHeader, Stylediv } from "./Header.style";
+import styled from "styled-components";
 
 interface HeaderProps {
     title: string
@@ -29,10 +30,10 @@ export const Header = ({ title, userName }: HeaderProps) => {
                 {userName
                     ? (<>
                         <span>{userName}</span>
-                        <button className={styles.button} onClick={handleLogout}>Sair</button>
+                        <button className={styled.button} onClick={handleLogout}>Sair</button>
                     </>)
                     : (
-                        <button className={styles.button} onClick={handleLogin}>Login</button>
+                        <button className={styled.button} onClick={handleLogin}>Login</button>
                     )
                 }
             </Stylediv>
