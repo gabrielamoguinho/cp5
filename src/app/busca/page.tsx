@@ -44,7 +44,7 @@ export default function Busca() {
     };
 
     const handleClick = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault(); // Previne o comportamento padrão de recarregar a página
+        event.preventDefault(); 
         loadCities();
     };
 
