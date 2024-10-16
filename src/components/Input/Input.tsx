@@ -1,4 +1,3 @@
-import { ChangeEvent } from "react";
 import { StyledInput, StyledLabel } from "./Input.style";
 
 interface InputProps {
@@ -24,7 +23,7 @@ export const Input = ({
         type={type}
         id={id}
         name={name}
-        onChange={(e: ChangeEvent<HTMLInputElement>) => onChange(e)}
+        onChange={(e) => onChange(e)}
         {...rest}
       />
     </>

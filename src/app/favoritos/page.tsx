@@ -1,15 +1,16 @@
-"use client"
+"use client";
 import { Header } from "@/components/Header/Header";
 import UserContext from "@/context/UserContext";
+import { useVerifyLogin } from "@/helpers/useVerifyLogin";
 import { useContext } from "react";
-import { useVerifyLogin } from "../../helpers/useVerifyLogin";
 
 export default function Favoritos() {
-    useVerifyLogin()
-
+    useVerifyLogin();
     const { userName } = useContext(UserContext) ?? {};
 
-    return <>
-        <Header title="Favoritos" userName={userName} />
-    </>
+    return (
+        <>
+            <Header title="Favoritos" userName={userName} />
+        </>
+    );
 }

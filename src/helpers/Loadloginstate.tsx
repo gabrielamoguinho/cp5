@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useContext, useEffect } from "react";
 import UserContext from "../context/UserContext";
 
-export const loadLoginState = () => {
+export const Loadloginstate = () => {
     const router = useRouter();
     const { setUserName } = useContext(UserContext);
 
