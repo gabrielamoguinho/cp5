@@ -5,11 +5,11 @@ import { Header } from "@/components/Header/Header";
 import { Input } from "@/components/Input/Input";
 import { Button } from "@/components/Button/Button";
 import UserContext from "@/context/UserContext";
-import { LoadLoginState } from "@/helpers/Loadloginstate";
+import { Loadloginstate } from "@/helpers/Loadloginstate";
 
 
 export default function Busca() {
-    LoadLoginState();
+    Loadloginstate();
     const router = useRouter();
     const [cityName, setCityName] = useState<string>("");
     const [cityList, setCityList] = useState([]);
